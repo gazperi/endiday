@@ -1,0 +1,67 @@
+const colors = require('tailwindcss/colors')
+
+module.exports = {
+  content: ['./src/**/*.{js,jsx,ts,tsx}'],
+  theme: {
+    fontFamily: {
+      sans: ['"Work sans"', 'sans-serif'],
+      serif: ['Sansita', 'serif'],
+      swashed: ['"Sansita Swashed"', 'serif'],
+      poiret: ['"Poiret One"', 'sans-serif'],
+    },
+    colors: {
+      brown: {
+        50: '#a1846d',
+        100: '#977a63',
+        200: '#8d7059',
+        300: '#83664f',
+        400: '#795c45',
+        500: '#6f523b',
+        600: '#654831',
+        700: '#5b3e27',
+        800: '#51341d',
+        900: '#472a13',
+      },
+      sky: {
+        50: '#f3fbfd',
+        100: '#e6f7fa',
+        200: '#c2eaf3',
+        300: '#9ddeec',
+        400: '#53c5de',
+        500: '#09acd0',
+        600: '#089bbb',
+        700: '#07819c',
+        800: '#05677d',
+        900: '#045466',
+      },
+      chateau: {
+        50: '#f4faf7',
+        100: '#e9f6ee',
+        200: '#c8e8d5',
+        300: '#a7dbbb',
+        400: '#65bf88',
+        500: '#23a455',
+        600: '#20944d',
+        700: '#1a7b40',
+        800: '#156233',
+        900: '#11502a',
+      },
+      // Default Tailwind Colors
+      rose: colors.rose,
+      lime: colors.lime,
+      slate: colors.slate,
+      gray: colors.gray,
+      white: colors.white,
+      red: colors.rose,
+      teal: colors.teal,
+      purple: colors.purple,
+      violet: colors.violet,
+    },
+  },
+  plugins: [
+    require('@tailwindcss/typography'),
+    require('@tailwindcss/forms'),
+    require('@tailwindcss/line-clamp'),
+    require('@tailwindcss/aspect-ratio'),
+  ],
+}

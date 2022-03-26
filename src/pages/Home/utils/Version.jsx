@@ -18,6 +18,11 @@ const Version = [
     description:
       'Every date that you created will be shareble throught a link. The users that receives those links, can save this to their account.',
   },
+  {
+    title: 'Languages',
+    description:
+      "A way to change from english to other languages by one click. I'm planning how to do this and probaly is going to be on footer.",
+  },
 ]
 
 export { Version }

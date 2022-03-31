@@ -7,7 +7,13 @@ function SecondHalf() {
   const now = new Date().getTime()
 
   switch (new Date().getMonth()) {
-    case (0, 2, 4, 6, 7, 9, 11):
+    case 0:
+    case 2:
+    case 4:
+    case 6:
+    case 7:
+    case 9:
+    case 11:
       var start = new Date(new Date().setDate(16)).setHours(0, 0, 0, 0)
       var end = new Date(new Date().setDate(31)).setHours(23, 59, 59, 999)
       break
